@@ -21,9 +21,9 @@ for rows in data:
     print("      ", end = '')
     headcount=0
     for words in rows:
-        print("<"+header[headcount]+">", end = '')
+        print("<"+header[headcount].replace(" ",'_')+">", end = '')
         print(words, end = '')
-        print("</"+header[headcount]+">", end = '')
+        print("</"+header[headcount].replace(" ",'_')+">", end = '')
         headcount=headcount+1
     print("\n    </record>\n", end = '')
 print("  </data>\n", end = '')
