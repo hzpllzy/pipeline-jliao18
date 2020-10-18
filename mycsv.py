@@ -33,5 +33,4 @@ def readcsv(data):
         #datatemp=datatemp+row
     datatemp.append(row.split(","))
     data=datatemp
-    ...
     return headers, data
